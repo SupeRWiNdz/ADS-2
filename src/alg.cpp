@@ -34,5 +34,8 @@ return result;
 }
 
 double cosn(double x, uint16_t count) {
-    return 0;
+double result = 0;
+for (uint16_t i = 0; i <= count; i++)
+result += (calcItem(x, 2 * i) * pow(-1, i));
+return result;
 }
