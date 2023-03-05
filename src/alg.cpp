@@ -3,15 +3,16 @@
 #include "alg.h"
 
 double pown(double value, uint16_t n) {
-    if (n == 0) return 1;
-    double result = value;
-    for (uint16_t i = 1; i < n; i++)
-        result *= value;
-    return result;
+if (n == 0) return 1;
+double result = value;
+for (uint16_t i = 1; i < n; i++)
+result *= value;
+return result;
 }
 
 uint64_t fact(uint16_t n) {
-    return 0;
+if (n == 0) return (1);
+else return (n * fact(n - 1));
 }
 
 double calcItem(double x, uint16_t n) {
