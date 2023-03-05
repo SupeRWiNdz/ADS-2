@@ -29,13 +29,13 @@ return result;
 double sinn(double x, uint16_t count) {
 double result = 0;
 for (uint16_t i = 0; i <= count; i++)
-result += (calcItem(x, 2 * i + 1) * pow(-1, i));
+result += (calcItem(x, 2 * i + 1) * pown(-1, i));
 return result;
 }
 
 double cosn(double x, uint16_t count) {
 double result = 0;
 for (uint16_t i = 0; i <= count; i++)
-result += (calcItem(x, 2 * i) * pow(-1, i));
+result += (calcItem(x, 2 * i) * pown(-1, i));
 return result;
 }
