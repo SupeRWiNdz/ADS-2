@@ -16,7 +16,7 @@ else return (n * fact(n - 1));
 }
 
 double calcItem(double x, uint16_t n) {
-    return 0;
+return (pown(x, n) / fact(n));
 }
 
 double expn(double x, uint16_t count) {
